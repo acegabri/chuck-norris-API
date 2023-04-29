@@ -81,12 +81,11 @@ h1 {
 	width: 364px;
 	height: 48px;
 	background-color: #780116;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 156px;
-
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 156px;
 }
 
 #loadJoke {
@@ -96,7 +95,7 @@ h1 {
 	font-size: 16px;
 	line-height: 120%;
 	color: #ffffff;
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .maxiContainer {
@@ -105,4 +104,3 @@ h1 {
 	align-items: center;
 	flex-direction: column;
 }
-

@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chcuk norris API</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>chcuk norris API</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="title">
+				<h1>JOKE CHUCK NORRIS</h1>
+				<img src="static/images/mitra.png" alt="mitraglietta" />
+			</div>
 
-    <div class="container">
+			<div class="joke">
+				<p class="jokeString"></p>
+			</div>
 
-        <div class="title">
-            <h1>
-                JOKE CHUCK NORRIS
-            </h1>
-            <img src="static/images/mitra.png" alt="mitraglietta">
-        </div>
+			<select name="jokeTypes" id="jokeTypes"></select>
 
-        <div class="joke">
-            <p class="joke-string"></p>
-        </div>
-
-        
-    </div>
-
-</body>
+			<a id="loadJoke" href="#">Carica battuta</a>
+			<div class="copyContainer">
+				<a id="copyButton" href="#">Copia</a>
+                <img src="static/images/copia.svg" alt="copy button">
+			</div>
+		</div>
+	</body>
 </html>

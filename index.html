@@ -5,25 +5,41 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>chcuk norris API</title>
+		<link rel="stylesheet" href="static/css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
-		<div class="container">
-			<div class="title">
+		<div class="maxiContainer">
+			<div class="titleContainer">
 				<h1>JOKE CHUCK NORRIS</h1>
-				<img src="static/images/mitra.png" alt="mitraglietta" />
+				<img src="static/images/mitra.png" alt="mitraglietta" id="mitra"/>
 			</div>
 
-			<div class="joke">
+			<div class="jokeContainer">
 				<p class="jokeString"></p>
 			</div>
 
-			<select name="jokeTypes" id="jokeTypes"></select>
+			<div class="jokeSelect">
+				<img src="static/images/Chuck1.png" alt="chcuk image" id="chuckImg">
+				<select name="jokeTypes" id="jokeTypes">
+					<!--inserire in futuro-->
+				</select>
+			</div>
 
-			<a id="loadJoke" href="#">Carica battuta</a>
+			<div class="loadJokeContainer">
+				<a id="loadJoke" href="#">Carica battuta</a>
+			</div>
 			<div class="copyContainer">
 				<a id="copyButton" href="#">Copia</a>
-                <img src="static/images/copia.svg" alt="copy button">
+				<img src="static/images/copia.svg" alt="copy button" />
 			</div>
 		</div>
+
+		<script src="static/js/index.js"></script>
 	</body>
 </html>

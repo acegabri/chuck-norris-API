@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.titleContainer {
+	text-align: center;
+}
+
+h1 {
+	margin-top: 20px;
+	font-family: "Concert One";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 52px;
+	line-height: 120%;
+	text-transform: uppercase;
+	color: #d8572a;
+	-webkit-text-stroke: 1px black;
+	position: relative;
+}
+
+#mitra {
+	position: absolute;
+	right: 15px;
+	top: 70px;
+}
+
+.jokeContainer {
+	border-radius: 20px;
+	margin-top: 129px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 124px;
+	width: 364px;
+	background-color: #e1e1e1;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.jokeString {
+	width: 100%;
+	font-family: "Concert One";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 120%;
+	text-transform: lowercase;
+	color: #000000;
+}
+
+#chuckImg {
+	margin-top: 54px;
+}
+
+.jokeSelect {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#jokeTypes {
+	height: 28px;
+	width: 364px;
+	border-radius: 10px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.loadJokeContainer {
+	text-align: center;
+	width: 364px;
+	height: 48px;
+	background-color: #780116;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 156px;
+
+}
+
+#loadJoke {
+	font-family: "Concert One";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 120%;
+	color: #ffffff;
+    text-decoration: none;
+}
+
+.maxiContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+

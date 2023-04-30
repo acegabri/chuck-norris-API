@@ -104,3 +104,26 @@ h1 {
 	align-items: center;
 	flex-direction: column;
 }
+
+.copyContainer {
+	width: 185px;
+	height: 33px;
+	background: rgba(216, 87, 42, 0.8);
+	border-radius: 10px;
+	text-align: center;
+	margin-top: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#copyButton {
+	font-family: "Concert One";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 120%;
+	color: #ffffff;
+	text-decoration: none;
+}
+

@@ -32,14 +32,22 @@
 			</div>
 
 			<div class="loadJokeContainer">
-				<a id="loadJoke" href="#">Carica battuta</a>
+				<a id="loadJoke" href="#"> <span>Carica battuta</span> </a>
 			</div>
+
 			<div class="copyContainer">
-				<a id="copyButton" href="#">Copia</a>
-				<img src="static/images/copia.svg" alt="copy button" />
+				<a href="#" class="copyButton">
+					<span id="copy">Copia</span>
+					<img src="static/images/copia.svg" alt="copy button" class="copyImg"/>
+				</a>
 			</div>
 		</div>
 
-		<script src="static/js/index.js"></script>
+		<div class="jokeLinkContainer">
+			<a id="jokeLink" href=""></a>
+		</div>
+
+		<script src="static/js/copyToClipboard.js"></script>
+		<script src="static/js/loadJoke.js"></script>
 	</body>
 </html>

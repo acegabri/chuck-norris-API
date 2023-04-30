@@ -14,7 +14,7 @@ loadJokeButton.addEventListener("click", function (e) {
 
 	function catchCallback(error) {
 		console.log(error);
-		document.querySelector("#error").innerHTML = error;
+		//document.querySelector("#error").innerHTML = error;
 	}
 
 	function finalCallback(data) {

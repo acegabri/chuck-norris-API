@@ -26,40 +26,40 @@
 
 			<div class="jokeSelect">
 				<img src="static/images/Chuck1.png" alt="chcuk image" id="chuckImg" />
-				<select name="jokeTypes" id="jokeTypes">
-					<option disabled selected>select a joke type</option>
-					<option value="animal">Animal</option>
-					<option value="career">Career</option>
-					<option value="celebrity">Celebrity</option>
-					<option value="dev">Dev</option>
-					<option value="explicit">Explicit</option>
-					<option value="fashion">Fashion</option>
-					<option value="food">Food</option>
-					<option value="history">History</option>
-					<option value="money">Movie</option>
-					<option value="music">Music</option>
-					<option value="political">Political</option>
-					<option value="religion">Religion</option>
-					<option value="science">Science</option>
-					<option value="sport">Sport</option>
-					<option value="travel">Travel</option>
-					<option value="money">Money</option>
-				</select>
-			</div>
+				<form id="jokeForm">
+					<select name="jokeTypes" id="jokeTypes">
+						<option value="" selected>select a joke type</option>
+						<option value="animal">Animal</option>
+						<option value="career">Career</option>
+						<option value="celebrity">Celebrity</option>
+						<option value="dev">Dev</option>
+						<option value="explicit">Explicit</option>
+						<option value="fashion">Fashion</option>
+						<option value="food">Food</option>
+						<option value="history">History</option>
+						<option value="money">Movie</option>
+						<option value="music">Music</option>
+						<option value="political">Political</option>
+						<option value="religion">Religion</option>
+						<option value="science">Science</option>
+						<option value="sport">Sport</option>
+						<option value="travel">Travel</option>
+						<option value="money">Money</option>
+					</select>
 
-			<div class="loadJokeContainer">
-				<a id="loadJoke" href="#"> <span>Carica battuta</span> </a>
-			</div>
+					<button type="submit" class="loadJokeButton">Carica battuta</button>
 
-			<div class="copyContainer">
-				<a href="#" class="copyButton">
-					<span id="copy">Copia</span>
-					<img
-						src="static/images/copia.svg"
-						alt="copy button"
-						class="copyImg"
-					/>
-				</a>
+					<div class="copyContainer">
+						<a href="#" class="copyButton">
+							<span id="copy">Copia</span>
+							<img
+								src="static/images/copia.svg"
+								alt="copy button"
+								class="copyImg"
+							/>
+						</a>
+					</div>
+				</form>
 			</div>
 		</div>
 

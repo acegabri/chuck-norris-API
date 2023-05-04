@@ -1,4 +1,4 @@
-let loadJokeButton = document.querySelector("#loadJoke");
+let loadJokeButton = document.querySelector(".loadJokeButton");
 
 loadJokeButton.addEventListener("click", function (e) {
 	e.preventDefault();
@@ -36,3 +36,4 @@ loadJokeButton.addEventListener("click", function (e) {
 		.then(finalCallback)
 		.catch(catchCallback);
 });
+

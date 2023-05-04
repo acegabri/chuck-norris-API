@@ -47,18 +47,8 @@ form.addEventListener("submit", function (e) {
 	}
 
 	function finalCallback(data) {
-		
-		/*
-		
-		console.log("questo è l'oggetto JSON restituito");
-		console.log(data); //stampa tutto l'oggetto JSON
-		console.log(data.value); //stampa solamente il joke che è ciò che a noi interessa
-		
-
-		console.log(`categoria del joke stampato`);
-		*/
-
-		data.categories = currentCategory;
+	
+		//data.categories = currentCategory;
 		console.log(data);
 		document.querySelector(".jokeString").innerHTML = data.value;
 

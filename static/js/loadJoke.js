@@ -1,6 +1,5 @@
 let loadJokeButton = document.querySelector(".loadJokeButton");
 let form = document.querySelector("#jokeForm");
-let url = "https://api.chucknorris.io/jokes/random";
 
 let categories = [
 	"animal",
@@ -24,6 +23,14 @@ let categories = [
 form.addEventListener("submit", function (e) {
 	e.preventDefault();
 
+	let currentCategory = document.querySelector("select[name=jokeTypes]").value;
+	//console.log(`categoria -> ${currentCategory}`);
+	let url = "https://api.chucknorris.io/jokes/random";
+
+	if (currentCategory != "") {
+		url += `?category=${currentCategory}`;
+	}
+
 	function thenCallback(response) {
 		/*console.log("questa è la response del server");
 		console.log(response);
@@ -40,18 +47,7 @@ form.addEventListener("submit", function (e) {
 	}
 
 	function finalCallback(data) {
-		let currentCategory = document.querySelector(
-			"select[name=jokeTypes]"
-		).value;
-		//console.log(`categoria -> ${currentCategory}`);
-		url = "https://api.chucknorris.io/jokes/random";
-
-		if (currentCategory != "") {
-			url += `?category=${currentCategory}`;
-		}
-
-		console.log(url);
-
+		
 		/*
 		
 		console.log("questo è l'oggetto JSON restituito");

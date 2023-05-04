@@ -24,7 +24,7 @@ form.addEventListener("submit", function (e) {
 	e.preventDefault();
 
 	let currentCategory = document.querySelector("select[name=jokeTypes]").value;
-	//console.log(`categoria -> ${currentCategory}`);
+	//console.log(`categoria -> ${currentCategory}`); la categoria del joke è possibile vederla dall'oggetto JSON direttamente
 	let url = "https://api.chucknorris.io/jokes/random";
 
 	if (currentCategory != "") {

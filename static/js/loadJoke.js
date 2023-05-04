@@ -1,6 +1,26 @@
 let loadJokeButton = document.querySelector(".loadJokeButton");
+let form = document.querySelector("#jokeForm");
 
-loadJokeButton.addEventListener("click", function (e) {
+let categories = [
+	"animal",
+	"career",
+	"celebrity",
+	"dev",
+	"explicit",
+	"fashion",
+	"food",
+	"history",
+	"money",
+	"movie",
+	"music",
+	"political",
+	"religion",
+	"science",
+	"sport",
+	"travel",
+];
+
+form.addEventListener("submit", function (e) {
 	e.preventDefault();
 
 	function thenCallback(response) {
@@ -19,6 +39,17 @@ loadJokeButton.addEventListener("click", function (e) {
 	}
 
 	function finalCallback(data) {
+		let currentCategory = document.querySelector(
+			"select[name=jokeTypes]"
+		).value;
+		console.log(`categoria -> ${currentCategory}`);
+		let url = "https://api.chucknorris.io/jokes/random";
+		if (currentCategory != "") {
+			url += `?category=${currentCategory}`;
+		}
+
+		console.log(url);
+
 		console.log("questo è l'oggetto JSON restituito");
 		console.log(data); //stampa tutto l'oggetto JSON
 		console.log(data.value); //stampa solamente il joke che è ciò che a noi
@@ -36,4 +67,3 @@ loadJokeButton.addEventListener("click", function (e) {
 		.then(finalCallback)
 		.catch(catchCallback);
 });
-
